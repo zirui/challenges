@@ -1,0 +1,29 @@
+#include <iostream>
+#include <stdio.h>
+#include <vector>
+using namespace std;
+
+
+
+int main()
+{
+    freopen('in.data',stdin,'r')
+    int ncase;
+    int m,n;
+    cin>>ncase;
+    while(ncase--)
+    {
+       cin>>m>>n;
+       vector<int> primes(m-n+1,1);
+       for(int i =2;i*i<=n;i++)
+       {
+           start = i/m * i;
+           for(int j= start,j<=n;j+=i)
+           {
+               if(j !=i && j >= m)
+                   primes[j-m] = 0 
+           }
+       }
+    }
+
+}
